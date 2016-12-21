@@ -1,0 +1,336 @@
+*{
+	box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #2d2164;
+    color: #fff;
+    width: 100%;
+    font-family: 'Dosis', sans-serif;
+}
+
+header {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#logo img {
+    margin: 17% auto;
+    width: 75%;
+    display: block;
+}
+
+ul li {
+    list-style: none;
+    padding-right: 35px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 4px;
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    padding: 0 5px 5px;
+    line-height: 1.8;
+}
+
+ul li a:hover {
+    color: #ffbc62;
+    border-bottom: 3px solid rgba(255, 188, 98, 0.3);
+    transition: 0.25s ease-in;
+}
+a.selected {
+    color: #ffbc62;
+    border-bottom: 3px solid rgba(255, 188, 98, 0.3);
+}
+
+section#portfolio {
+    display: inline-block;
+    margin: 0 auto;
+}
+
+.wrapper {
+    background: #aa6915;
+}
+
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+
+.project img {
+    width: 100%;
+    display: inline-block;
+    float: left;
+    opacity: 0.5;
+}
+
+.project img:hover {
+    opacity: 1;
+    transition: 0.25s ease-in;
+}
+.title {
+	font-size:16px;
+	color: #fff;
+	text-align:center;
+	font-weight: 700;
+}
+
+.hover {
+    position: absolute;
+    top: 32%;
+    left: 25%;
+    right: 25%;
+    bottom: 30%;
+    text-transform: uppercase;
+
+}
+
+.title:hover {
+    color: #2d2164;
+    background: #fff;
+    border:2px solid #2d2164;
+    transition: 0.25s ease-in;
+    padding: 5% 8%;
+}
+
+section#about {
+    width: 95%;
+    margin: auto;
+}
+
+.pic {
+    text-align: center;
+    margin-top: 30px;
+}
+
+#about_img {
+	border-radius: 50%;
+	width: 70%;
+
+}
+
+.text p {
+
+margin-bottom: 60px;
+}
+
+section#contact {
+    width: 95%;
+    margin: 10% auto;
+    display: block;
+}
+
+.info_details,
+.info_contact {
+    padding-top: 10px;
+    display: block;
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.info_contact {
+    width: 100%;
+    display: block;
+    float: left;
+}
+
+.info_contact ul {
+    padding: 0;
+    float: left;
+    text-align: left;
+}
+
+.info_contact ul li {
+    display: block;
+    text-align: left;
+}
+
+footer {
+    background: #251c4d;
+    height: 150px;
+    text-align: center;
+    clear: both;
+
+}
+
+.social {
+    padding-top: 20px;
+}
+
+span.fa.fa-facebook-square, .fa-instagram, .fa-twitter-square, .fa-linkedin-square, .fa-envelope, .fa-phone, .fa-map-marker  {
+    color: white;
+    font-size: 20px;
+    padding-right: 10px;
+}
+
+span.fa.fa-envelope {
+    font-size: 18px;
+}
+
+span.fa.fa-facebook-square:hover,
+.fa-instagram:hover,
+.fa-twitter-square:hover,
+.fa-linkedin-square:hover  {
+    opacity: 0.6;
+}
+
+
+@media screen and (min-width : 480px) {
+
+header {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#logo img {
+    margin: 9% auto;
+    width: 45%;
+}
+
+nav {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+ul {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+ul li {
+    padding-right: 2%;
+    padding-left: 2%;
+    display: inline-block;
+}
+
+}
+
+@media screen and (min-width : 760px) {
+
+div#logo {
+    display: inline-block;
+}
+
+#logo img {
+    margin: 9% auto;
+    width: 70%;
+    display: inline-block;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    margin-top: 8%;
+    width: 60%;
+}
+
+.hover {
+	top: 42%;
+}
+
+#about_img {
+    border-radius: 50%;
+    width: 40%;
+}
+
+}
+
+@media screen and (min-width : 1200px) {
+
+#logo img {
+    margin: 17% auto;
+    width: 80%;
+}
+
+nav {
+    display: inline-block;
+    float: right;
+    margin-top: 5%;
+    width: 35%;
+}
+
+section#portfolio {
+    display: inline;
+    margin: 0 auto;
+}
+
+.wrapper {
+    overflow: hidden;
+}
+
+.project {
+    width: 50%;
+    float: left;
+}
+
+section#about {
+    width: 90%;
+    margin: auto;
+    display: inline-block;
+}
+
+#about_img {
+    border-radius: 50%;
+    width: 20%;
+    display: inline-block;
+    float: left;
+    margin: 3% 10% 8% 10%;
+}
+
+.text {
+    width: 100%;
+    padding-top:5%;
+}
+
+.text p {
+    margin-bottom: 60px;
+}
+
+section#contact {
+    width: 95%;
+    margin: 10% auto;
+    display: block;
+    padding-right: 5%;
+    padding-left: 12%;
+}
+
+.info_details,
+.info_contact {
+    padding-top: 10px;
+    display: inline-block;
+    width: 60%;
+    padding-left: 40px;
+    padding-right: 50px;
+}
+
+.info_contact {
+    width: 40%;
+    display: inline-block;
+    float: right;
+}
+
+.info_contact ul {
+    padding: 0;
+    float: left;
+    text-align: left;
+}
+
+.info_contact ul li {
+    display: block;
+    text-align: left;
+}
+
+.social {
+    padding-top: 30px;
+}
+
+}
